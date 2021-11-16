@@ -5,7 +5,7 @@
       <option value="compressed">Compressed</option>
       <option value="list">List</option>
     </select>
-    <div class="grid" :class="{ 'grid-column': layout === 'list' }">
+    <div class="grid" :class="{ 'grid-column': layout === 'grid' }">
       <component
         v-for="item in items"
         :key="item.id"
@@ -19,6 +19,8 @@
   </div>
 </template>
 <script>
+import Header from './components/Header'
+
 import Rich from './components/Rich.vue'
 import Compressed from './components/Compressed.vue'
 import List from './components/List.vue'
@@ -27,7 +29,8 @@ export default {
   components: {
     Rich,
     Compressed,
-    List
+    List,
+    'my-header':Header
   },
   data() {
     return {
@@ -110,7 +113,8 @@ export default {
 </script>
 <style scoped>
 .grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .grid-column {
   flex-direction: column;
