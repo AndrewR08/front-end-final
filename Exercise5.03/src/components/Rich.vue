@@ -18,7 +18,9 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 800px;
-  padding: 1em
+  padding-bottom: 5em;
+  padding-top: 5em;
+  padding-left: 2em;
 }
 h3 {
   font-weight: normal;
