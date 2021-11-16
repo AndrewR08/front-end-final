@@ -1,14 +1,15 @@
 <template>
   <div class="card">
-    <img :src="url" width="100%" />
+    <img :src="url" width="100" height="100" alt="Team Logo" />
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>
+    <a :href="url2" target="_blank"> More Details </a>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['url', 'title', 'description']
+  props: ['url', 'url2', 'title', 'description']
 }
 </script>
 
@@ -16,7 +17,7 @@ export default {
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 200px;
+  max-width: 800px;
 }
 h3 {
   font-weight: normal;
