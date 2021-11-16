@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header />
     Layout: <select v-model="layout">
       <option value="rich">Rich</option>
       <option value="compressed">Compressed</option>
@@ -30,7 +31,7 @@ export default {
     Rich,
     Compressed,
     List,
-    'my-header':Header
+    Header,
   },
   data() {
     return {
