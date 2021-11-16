@@ -1,9 +1,9 @@
 <template>
   <div class="card">
-    <img :src="url" width="100" height="100" alt="Team Logo" />
+    <img :src="url" width="200" height="200" alt="Team Logo" />
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>
-    <a :href="url2" target="_blank"> More Details </a>
+    <a :href="url2" target="_blank">More Details</a>
   </div>
 </template>
 
@@ -18,6 +18,7 @@ export default {
   display: flex;
   flex-direction: column;
   max-width: 800px;
+  padding: 1em
 }
 h3 {
   font-weight: normal;

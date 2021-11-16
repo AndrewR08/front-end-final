@@ -34,18 +34,32 @@ export default {
       layout: 'rich',
       items: [
         {
-          id: '10',
-          title: 'ASU vs. ECU',
+          id: 'ECU',
+          title: 'ASU vs ECU',
           description: 'App State win: 33-19',
           url: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/East_Carolina_Pirates_logo.svg/1200px-East_Carolina_Pirates_logo.svg.png',
           url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/9/2/APP01.pdf',
         },
         {
-          id: '1000',
-          title: 'ASU @ #22 Miami',
+          id: 'Miami',
+          title: 'ASU at #22 Miami',
           description: 'App State loss: 23-25',
           url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Miami_Hurricanes_logo.svg/1200px-Miami_Hurricanes_logo.svg.png',
           url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/9/11/APP02.PDF'
+        },
+        {
+          id: 'Elon',
+          title: 'ASU vs Elon',
+          description: 'App State win: 44-10',
+          url: 'https://www.elon.edu/u/university-communications/wp-content/uploads/sites/137/2018/07/phoenix-logo.png',
+          url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/9/18/APP03.PDF'
+        },
+        {
+          id: 'Marshall',
+          title: 'ASU vs Marshall',
+          description: 'App State win: 31-30',
+          url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Marshall_University_logo.svg/1200px-Marshall_University_logo.svg.png',
+          url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/9/23/APP04.PDF'
         },
       ]
     }
