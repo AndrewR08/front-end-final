@@ -1,11 +1,7 @@
 <template>
   <div id="app">
     <Header />
-    Layout: <select v-model="layout">
-      <option value="rich">Rich</option>
-      <option value="compressed">Compressed</option>
-      <option value="list">List</option>
-    </select>
+    
     <div class="grid" :class="{ 'grid-column': layout === 'grid' }">
       <component
         v-for="item in items"
