@@ -116,8 +116,11 @@ export default {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-left: 69px;
 }
 .grid-column {
   flex-direction: column;
 }
+
 </style>

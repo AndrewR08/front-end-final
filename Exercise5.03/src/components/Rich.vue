@@ -45,10 +45,10 @@ h3 {
 }
 
 .card {
-  background-color: transparent;
+  background-color: rgb(71, 67, 67);
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
+  border: 3px solid #080808;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 .card-inner {
@@ -75,13 +75,13 @@ h3 {
 
 /* Style the front side (fallback if image is missing) */
 .card-front {
-  background-color: #bbb;
+  background-color: rgb(104, 93, 93);
   color: black;
 }
 
 /* Style the back side */
 .card-back {
-  background-color: dodgerblue;
+  background-color: orange;
   color: black;
   transform: rotateY(180deg);
 }
