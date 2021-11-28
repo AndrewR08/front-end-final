@@ -11,6 +11,8 @@
         :url2="item.url2"
       />
     </div>
+    <div id="goldstrip">
+    </div>
   </div>
 </template>
 <script>
@@ -56,6 +58,13 @@ export default {
           description: 'App State win: 48-14',
           url: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/36/Arkansas_State_Red_Wolves_logo.svg/1200px-Arkansas_State_Red_Wolves_logo.svg.png',
           url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/11/6/APP09.PDF'
+        },
+        {
+          id: 'Troy',
+          title: 'ASU at South Alabama',
+          description: 'App State win: 45-7',
+          url: 'https://troytrojans.com/images/logos/site/site.png',
+          url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/11/20/APP11.PDF'
         }
       ]
     }
@@ -68,9 +77,20 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding-left: 69px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  background-color: goldenrod;
 }
 .grid-column {
   flex-direction: column;
 }
-
+#goldstrip {
+  display: flex;
+  height: 100px;
+  margin-left: -10px;
+  margin-right: -20px;
+  margin-bottom: -30px;
+  background-color: goldenrod;
+}
 </style>
