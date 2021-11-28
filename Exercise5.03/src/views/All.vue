@@ -11,6 +11,8 @@
         :url2="item.url2"
       />
     </div>
+    <div id="goldstrip">
+    </div>
   </div>
 </template>
 <script>
@@ -98,6 +100,20 @@ export default {
           description: 'App State win: 31-7',
           url: 'https://www.logolynx.com/images/logolynx/8e/8e8d75494c00e1e2fec82043ec470093.png',
           url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/11/13/APP10.PDF'
+        },
+        {
+          id: 'Troy',
+          title: 'ASU at South Alabama',
+          description: 'App State win: 45-7',
+          url: 'https://troytrojans.com/images/logos/site/site.png',
+          url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/11/20/APP11.PDF'
+        },
+        {
+          id: 'Georgia Southern',
+          title: 'ASU vs Georgia Southern',
+          description: 'App State win: 27-3',
+          url: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/1200px-Georgia_Southern_Eagles_logo.svg.png',
+          url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/11/27/APP12.PDF'
         }
       ]
     }
@@ -110,9 +126,19 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding-left: 69px;
+  background-color: goldenrod;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 .grid-column {
   flex-direction: column;
 }
-
+#goldstrip {
+  display: flex;
+  height: 20px;
+  margin-left: -10px;
+  margin-right: -20px;
+  margin-bottom: -30px;
+  background-color: goldenrod;
+}
 </style>

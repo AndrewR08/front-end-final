@@ -11,6 +11,8 @@
         :url2="item.url2"
       />
     </div>
+    <div id="goldstrip">
+    </div>
   </div>
 </template>
 <script>
@@ -69,9 +71,20 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding-left: 69px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  background-color: goldenrod;
 }
 .grid-column {
   flex-direction: column;
 }
-
+#goldstrip {
+  display: flex;
+  height: 100px;
+  margin-left: -10px;
+  margin-right: -20px;
+  margin-bottom: -30px;
+  background-color: goldenrod;
+}
 </style>
