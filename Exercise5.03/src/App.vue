@@ -1,36 +1,28 @@
 <template>
   <div id="app">
     <Header />
-    Layout: <select v-model="layout">
-      <option value="rich">Rich</option>
-      <option value="compressed">Compressed</option>
-      <option value="list">List</option>
-    </select>
-    <div class="grid" :class="{ 'grid-column': layout === 'grid' }">
-      <component
-        v-for="item in items"
-        :key="item.id"
-        :is="layout"
-        :title="item.title"
-        :description="item.description"
-        :url="item.url"
-        :url2="item.url2"
-      />
+    <div id="nav">
+      <router-link to="/" tag="button">All </router-link>
+      <router-link to="../away" tag="button">Away </router-link>
+      <router-link to="../home" tag="button">Home </router-link>
+      <router-link to="../noncon" tag="button">Non-Con</router-link>
     </div>
+    <router-view/>
   </div>
 </template>
-<script>
-import Header from './components/Header'
 
-import Rich from './components/Rich.vue'
-import Compressed from './components/Compressed.vue'
-import List from './components/List.vue'
+<script>
+import Header from './components/Header.vue'
+
+//import Rich from './components/Rich.vue'
+//import Compressed from './components/Compressed.vue'
+//import List from './components/List.vue'
 
 export default {
   components: {
-    Rich,
-    Compressed,
-    List,
+    //Rich,
+    //Compressed,
+   // List,
     Header,
   },
   data() {
@@ -121,6 +113,16 @@ export default {
 }
 .grid-column {
   flex-direction: column;
+}
+#nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  margin-top: -20px;
+  margin-left: -10px;
+  margin-right: -20px;
+  margin-bottom: 20px;
 }
 
 </style>
