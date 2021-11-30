@@ -1,8 +1,8 @@
 <template>
   <div class="card">
     <div class="card-inner">
-      <div class="card-front">
-        <img :src="url" width="200" height="200" alt="Team Logo" class="center" />
+      <div id="demo" class="card-front">
+        <img :src="url" width="500" height=auto alt="Team Logo" />
       </div>
       <div class="card-back">
         <h3>{{ title }}</h3>
@@ -37,15 +37,9 @@ h3 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
 
 .card {
-  background-color: rgb(71, 67, 67);
+  background-color: rgb(138, 138, 138);
   width: 300px;
   height: 200px;
   border: 3px solid #080808;
@@ -71,18 +65,26 @@ h3 {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  vertical-align: middle;
+  text-align: center;
 }
 
 /* Style the front side (fallback if image is missing) */
 .card-front {
   background-color: rgb(104, 93, 93);
   color: black;
+  vertical-align: middle;
 }
 
 /* Style the back side */
 .card-back {
   background-color: orange;
-  color: black;
+  color: rgb(0, 0, 0);
   transform: rotateY(180deg);
+}
+img {
+  width: 60%;
+  margin: auto;
+  display: block;
 }
 </style>
