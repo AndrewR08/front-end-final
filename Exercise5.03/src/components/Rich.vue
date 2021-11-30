@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-inner">
       <div id="demo" class="card-front">
-        <img :src="url" width="500" height=auto alt="Team Logo" />
+        <img :src="url" width="500" height="200" alt="Team Logo" />
       </div>
       <div class="card-back">
         <h3>{{ title }}</h3>
@@ -87,5 +87,6 @@ img {
   width: 60%;
   margin: auto;
   display: block;
+  vertical-align: middle;
 }
 </style>
