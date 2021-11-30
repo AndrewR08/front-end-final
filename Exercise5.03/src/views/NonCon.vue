@@ -22,6 +22,9 @@ import Rich from '../components/Rich.vue'
 
 
 export default {
+  metaInfo: {
+    title: 'Non-Conference Games'
+  },
   components: {
     Rich,
    // Compressed,

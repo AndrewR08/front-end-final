@@ -21,6 +21,9 @@ import Rich from '../components/Rich.vue'
 
 
 export default {
+  metaInfo: {
+    title: 'Final VueJS Project'
+  },
   components: {
     Rich,
    // Compressed,

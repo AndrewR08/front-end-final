@@ -21,6 +21,9 @@ import Rich from '../components/Rich.vue'
 
 
 export default {
+  metaInfo: {
+    title: 'Away Games'
+  },
   components: {
     Rich,
    // Compressed,

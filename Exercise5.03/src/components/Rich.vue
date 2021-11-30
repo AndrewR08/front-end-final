@@ -15,7 +15,8 @@
 
 <script>
 export default {
-  props: ['url', 'url2', 'title', 'description']
+  props: ['url', 'url2', 'title', 'description'], 
+  title: 'Foo Page'
 }
 </script>
 
