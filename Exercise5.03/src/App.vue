@@ -1,32 +1,32 @@
 <template>
   <div id="app">
     <Header />
-    
-    <div class="grid" :class="{ 'grid-column': layout === 'grid' }">
-      <component
-        v-for="item in items"
-        :key="item.id"
-        :is="layout"
-        :title="item.title"
-        :description="item.description"
-        :url="item.url"
-        :url2="item.url2"
-      />
+    <div id="nav">
+      <router-link to="/" tag="button">All </router-link>
+      <router-link to="../away" tag="button">Away </router-link>
+      <router-link to="../home" tag="button">Home </router-link>
+      <router-link to="../noncon" tag="button">Non-Con</router-link>
     </div>
+    <div id="blackstrip">
+    </div>
+    <div id="goldstrip">
+    </div>
+    <router-view/>
   </div>
 </template>
-<script>
-import Header from './components/Header'
 
-import Rich from './components/Rich.vue'
-import Compressed from './components/Compressed.vue'
-import List from './components/List.vue'
+<script>
+import Header from './components/Header.vue'
+
+//import Rich from './components/Rich.vue'
+//import Compressed from './components/Compressed.vue'
+//import List from './components/List.vue'
 
 export default {
   components: {
-    Rich,
-    Compressed,
-    List,
+    //Rich,
+    //Compressed,
+   // List,
     Header,
   },
   data() {
@@ -102,6 +102,20 @@ export default {
           description: 'App State win: 31-7',
           url: 'https://www.logolynx.com/images/logolynx/8e/8e8d75494c00e1e2fec82043ec470093.png',
           url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/11/13/APP10.PDF'
+        },
+        {
+          id: 'Troy',
+          title: 'ASU at South Alabama',
+          description: 'App State win: 45-7',
+          url: 'https://troytrojans.com/images/logos/site/site.png',
+          url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/11/20/APP11.PDF'
+        },
+        {
+          id: 'Georgia Southern',
+          title: 'ASU vs Georgia Southern',
+          description: 'App State win: 27-3',
+          url: 'https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Georgia_Southern_Eagles_logo.svg/1200px-Georgia_Southern_Eagles_logo.svg.png',
+          url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/11/27/APP12.PDF'
         }
       ]
     }
@@ -112,8 +126,38 @@ export default {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-left: 69px;
+  background-color: goldenrod;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
 }
 .grid-column {
   flex-direction: column;
 }
+#blackstrip {
+  display: flex;
+  height: 20px;
+  margin-left: -10px;
+  margin-right: -20px;
+  background-color: black;
+}
+#goldstrip {
+  display: flex;
+  height: 20px;
+  margin-left: -10px;
+  margin-right: -20px;
+  background-color: goldenrod;
+}
+#nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+  margin-top: -20px;
+  margin-left: -10px;
+  margin-right: -20px;
+}
+
 </style>
