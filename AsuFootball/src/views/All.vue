@@ -106,7 +106,7 @@ export default {
         },
         {
           id: 'Troy',
-          title: 'ASU at South Alabama',
+          title: 'ASU at Troy',
           description: 'App State win: 45-7',
           url: 'https://troytrojans.com/images/logos/site/site.png',
           url2: 'https://s3.amazonaws.com/sidearm.sites/appstate.sidearmsports.com/documents/2021/11/20/APP11.PDF'
