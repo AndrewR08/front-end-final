@@ -1,8 +1,8 @@
 import { shallowMount } from '@vue/test-utils'
-import Rich from '../src/components/Rich.vue'
+import App from '../src/components/Rich.vue'
 
 
-test('App renders blog title correctly', () => {
-const wrapper = shallowMount(Rich)
+test('App renders more details link correctly', () => {
+const wrapper = shallowMount(App)
 expect(wrapper.text()).toMatch("More Details")
 })

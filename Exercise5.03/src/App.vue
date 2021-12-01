@@ -11,7 +11,7 @@
     </div>
     <div id="goldstrip">
     </div>
-    <router-view/>
+    <router-view :items="items"/>
   </div>
 </template>
 
