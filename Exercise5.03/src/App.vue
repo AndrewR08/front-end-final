@@ -11,7 +11,7 @@
     </div>
     <div id="goldstrip">
     </div>
-    <router-view/>
+    <router-view :items="items"/>
   </div>
 </template>
 
@@ -23,6 +23,10 @@ import Header from './components/Header.vue'
 //import List from './components/List.vue'
 
 export default {
+  name: 'Test App',
+  metaInfo: {
+    title: 'Final VueJS Project'
+  },
   components: {
     //Rich,
     //Compressed,
